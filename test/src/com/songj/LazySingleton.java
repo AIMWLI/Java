@@ -2,10 +2,11 @@
  * 单例模式5种形式
  */
 
- //1.懒汉式
+ 
 public class LazySingleton{]
     private static LazySingleton lazySingleton;
-    private LazySingleton(){};    public static LazySingleton getLazySingleton(){
+    private LazySingleton(){};   
+     public static LazySingleton getLazySingleton(){
                 lazySingleton = new LazySingleton();{
         }
     
@@ -13,6 +14,19 @@ public class LazySingleton{]
 } 
    }
 }
+
+public class Singleton{
+    private static LazySingleton lazySingleton;
+    pirvate Singleton (){};
+    public static Singleton getSingleton(){
+        if(singleton == null){
+            singleton = new Singleton;
+        }
+        return singleton;
+    }
+}
+
+
 //2.饿汉式
 public class Singleton1{
     private static Singleton1 singleton = new Singleton1;
