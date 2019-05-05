@@ -1,6 +1,6 @@
 package com.songj;
 
-import java.lang.Thread.sleep;
+import static java.lang.Thread.sleep;
 
 public class SingletonThread {
  
